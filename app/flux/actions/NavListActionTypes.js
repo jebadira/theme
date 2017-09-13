@@ -1,0 +1,14 @@
+'use strict';
+
+const NavListActionTypes = { 
+    FIRST : 'FIRST',
+    NAVLOADING : "NAVLOADING",
+    NAVLOADED : "NAVLOADED",
+    QUERY : "QUERY",
+    MAKELISTSTATIC : "MAKELISTSTATIC",
+    REARRANGENAVLIST : "REARRANGENAVLIST",
+    UPDATENAVLIST : "UPDATENAVLIST",
+    PINTODASHBOARD : "PINTODASHBOARD"
+};
+
+export default NavListActionTypes;

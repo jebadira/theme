@@ -1,0 +1,163 @@
+@import (css) "../../node_modules/office-ui-fabric-core/dist/css/fabric.css";
+@import (css) "../../node_modules/office-ui-fabric-react/dist/css/fabric.css";
+.MessageBars{
+    & + & {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.NavigationPanel{
+    .NavigationClose{
+        display:block;
+        position:relative;
+        button{
+            margin:0;
+            padding:0;
+            display:inline-block;
+            width:32px;
+            min-width:10px;
+            position:absolute;
+            right: 0;
+            height:32px;
+            div{
+
+            }
+        }
+    }
+    div.NavigationSearchBox{
+        max-width:250px;
+        margin:0 auto;
+        margin-bottom:10px;
+        border-color: #8c1d40;
+        div{
+            color : #8c1d40;
+        }
+    }
+    .NavigationItemWrapper{
+        margin-left: 15px;
+        min-height:40px;
+        .IconWrapper{
+            color: #FFC627;
+            display:inline-block;
+            height:30px;
+            width: 30px;
+            .Icon{
+                font-size:20px;
+                text-align: center;
+                padding: 0;
+                position: relative;
+                width:20px;
+                top:50%;
+                transform : translateY(-50%);
+            }
+        }
+        .NavigationItemText{
+            display:inline-block;
+            height:30px;
+            vertical-align: sub;
+        }
+        a {
+            text-decoration: none;
+        }
+        .NavigationMoreButton{
+            float:right;
+            color: #b6b6b6;
+            text-decoration: none;
+        }
+    }
+
+}
+.NavigationBar{
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+}
+
+.UserMenuContainer{
+    display: flex;
+    max-height:50px;
+    .NotificationBadge{
+        display:inline-block;
+
+        margin-top:5px;
+        
+        .IconWrapper{
+                color: #FFFFFF;
+                height:30px !important;
+                width: 30px !important;
+                padding: 0px !important;
+                margin-top: 7px !important;
+                .Icon{
+                    font-size:20px;
+                    text-align: center;
+                    padding: 0;
+                    position: relative;
+                    width:20px;
+                    top:50%;
+                    transform : translateY(-50%);
+                }
+        }
+    }
+    .UserName{
+        font-size:16px;
+        color : #FFF;
+        margin:10px;
+        margin-top:0;
+        margin-left: 15px;
+        display: inline-block;
+    }
+}
+
+.NotificationContainer{
+
+            .Notification{
+                display:flex;
+                justify-content: space-between;
+                height:40px;
+                &:hover{
+                    background-color: #f0f0f0;
+                    .NotificationBody{
+                        color: #000;
+                    }
+                }
+                .NotificationBody{
+                    display:inline-block;
+                    height:100%;
+                    padding-left:10px;
+                    padding-top: 12px;
+                    margin-right: 30px;
+                    color: rgba(0,0,0,.8);
+                    text-decoration: none;
+                    
+                }
+                .NotificationCheck{
+                    padding-top:0px !important;
+                }
+            }
+            .NotificationViewed{
+                height:40px;
+                &:hover{
+                    background-color: #f0f0f0;
+                    .NotificationBody{
+                        color: #000;
+
+                    }
+                }
+                .NotificationBody{
+                    display:inline-block;
+                    height:100%;
+                    padding-left:10px;
+                    padding-top: 12px;
+                    margin-right: 30px;
+                    color: rgba(0,0,0,.8);
+                    text-decoration: none;
+                    
+                }
+            }
+        }
